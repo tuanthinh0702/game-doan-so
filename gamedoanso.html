@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+
+<script>
+function checkNum() {
+  let a = [];
+  for (i = 0; i <= 100; i++) {
+    a.push(i);
+  }
+  let num = Math.floor(Math.random() * 150);
+    for (let i = 0; i < a.length; i++) {
+      if (a.indexOf(num[i]) !== -1) {
+        document.write("bạn đoán đúng ");
+        break;
+      } else {
+        document.write("bạn đoán sai mời bạn nhập lại  ");
+
+
+
+    }
+  }
+}
+checkNum();
+
+
+
+
+
+
+</script>
+</body>
+</html>
